@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container bg-light">
+        <h1 class="text-success text-center">Form Validation</h1>
+        <div class="col-lg-8 m-auto d-block">
+            <form action="./form.php" method="POST" onsubmit="return validation()">
+                
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input class="form-control" id="user" type="text" name="user" autocomplete="off">
+                </div>
+                <span id="username" class="text-danger font-weight-bold"></span>
+
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input class="form-control" id="pass" type="text" name="pass" autocomplete="off">
+                </div>
+                <span id="passwords" class="text-danger font-weight-bold"></span>
+
+                <div class="form-group">
+                    <label>Confirm Password:</label>
+                    <input class="form-control" id="conpass" type="text" name="conpass" autocomplete="off">
+                </div>
+                <span id="confirm" class="text-danger font-weight-bold"></span>
+
+                <div class="form-group">
+                    <label>Mobile No:</label>
+                    <input class="form-control" id="MobileNumber" type="text" name="mobile" autocomplete="off">
+                </div>
+                <span id="mobileno" class="text-danger font-weight-bold"></span>
+
+                <div class="form-group">
+                    <label>E-mail:</label>
+                    <input class="form-control" id="emails" type="text" name="email" autocomplete="off">
+                </div>
+                <span id="mail" class="text-danger font-weight-bold"></span>
+
+                <input type="submit" name="submit" value="submit" class="btn btn-success">
+
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/assets/js/javascriptvalidations.js"></script>
+
+</body>
+</html>
